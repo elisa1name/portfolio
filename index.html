@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Diamant</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <section class="sec1">
+            <div class="titre">
+                <video src="Smoke_43___4K_res.mp4" autoplay muted></video>
+                    <h1>
+                        <span>E</span>
+                        <span>L</span>
+                        <span>I</span>
+                        <span>S</span>
+                        <span>A</span>
+                        <span></span>
+                        <span></span>
+                        <span>V</span>
+                        <span>A</span>
+                        <span>L</span>
+                        <span>L</span>
+                        <span>E</span>
+                        <span>E</span>
+                    </h1>
+            </div>
+            <div class="svg-wrapper">
+                <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" height="60" width="320"></rect> </svg>
+                    <div class="text">Enter</div>
+                </div>
+        </section>
+    </header>
+    <section>
+            <div class="diamant">
+                    <span1><a class="pdf" href="2018 nouveau.pdf">
+                        <h4>CV</h4></a>
+                    </span1>
+                    <span1></span1>
+                    <span1></span1>
+                    <span1></span1>
+                    <span1></span1>
+                </div>
+                <div class="cente">
+                  <div class="lap"></div>
+                </div>
+                <div>
+                    <img id="block" src="Bb.jpg" alt="block">
+                    <h3 id="block1">Developpeuse junior à Web@cadémie by Epitech Paris, adore le front-end</h3>
+                </div>
+        </section>
+        <section class="sticky">
+            <h2 class="language">"Languages"<span id="demo"></span></h2>
+            <div id="pagePrems">
+
+                    <button id="menu">Front-End</button>
+                    <ul class="menu">
+                       <li class= "grayscale"><img class="menu" id="html" src="images/html5-3384014_960_720.png" alt="html"></li>
+                       <li class= "grayscale"><img class="menu" id="css" src="images/css.png"  alt="css"></li>
+                       <li class= "grayscale"><img class="menu" id="boostrap" src="images/bootstrap.jpg"  alt="boostrap"></li>
+                       <li class= "grayscale"><img class="menu" id="sass" src="images/sass-logo.png"  alt="sass"></li>
+                       <li class= "grayscale"><img class="menu" id="jquery" src="images/jQurery-e1423237413165.png" alt="jquery"></li>
+                   </ul>
+
+               <button id="menu1">Back-End</button>
+                   <ul class="menu1">
+                        <li class= "grayscale1"><img class="menu1" id="js" src="images/images.png" alt="js"></li>
+                        <li class= "grayscale1"><img class="menu1" id="php" src="images/php_PNG50.png" alt="php"></li>
+                        <li class= "grayscale1"><img class="menu1" id="mysql" src="images/mysql-logo.png" alt="mysql"></li>
+                        <li class= "grayscale1"><img class="menu1" id="react" src="images/react.png" alt="react"></li>
+                   </ul>
+
+    </div>
+        </section>
+        <section>
+            <p class="flechegauche">&#9756;</p>
+                 <div class="center">
+                     <div class="laptop">
+                       <h5>Click me</h5>
+                        </div>
+                 </div>
+            <p class="flechedroite">&#9758;</p>
+        </section>
+
+
+
+        <section class="sticky">
+                <blockquote>"Contactez-moi"<span id="demo1"></span></blockquote>
+                <form class="formulaire" action="index.html" method="post">
+                    <div>
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom">
+                    </div>
+                    <div>
+                        <label for="email">E-mail :</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="msg">Message :</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+                    <div class="button">
+                            <button type="submit">Envoyer le message</button>
+                        </div>
+                </form>
+                <h3 class="linked">Linked</h3><a href="https://www.linkedin.com/feed/"><img id="link" src="images/linkedin-logo.jpg" alt="link"></a>
+                <h3 class="mail">Mail</h3><a href="mailto:elisa.vallee@epitech.eu"><img id="mailimage" src="images/aiga-mail1.png" alt="email"></a>
+            </section>
+
+    <footer>
+     </footer>
+<script>
+            $(document).ready(function(){
+            $('#menu').click(function(){
+                $('.menu').fadeToggle('500');
+            });
+            });
+                $(document).ready(function(){
+                $('#menu1').click(function(){
+                    $('.menu1').fadeToggle('500');
+                });
+                });
+        </script>
+</body>
+</html>
