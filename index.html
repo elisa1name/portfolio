@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <title>Diamant</title>
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="index.js"></script>
+  
+  <link rel="stylesheet" href="flickity/flickity.css">
+  
 </head>
 <body>
     <header>
@@ -49,12 +50,12 @@
                   <div class="lap"></div>
                 </div>
                 <div>
-                    <img id="block" src="images/Bb.jpg" alt="block">
-                    <h3 id="block1">Developpeuse junior à Web@cadémie by Epitech Paris, adore le front-end</h3>
+                    <img id="block" class="element" src="images/Bb.jpg" alt="block">
+                    <h3 id="block1" s>Developpeuse junior à Web@cadémie by Epitech Paris</h3>
                 </div>
         </section>
         <section class="sticky">
-            <h2 class="language">"Languages"<span id="demo"></span></h2>
+            <h2 class="language">&#9756;"Languages"&#9758;<span id="demo"></span></h2>
             <div id="pagePrems">
 
                     <button id="menu">Front-End</button>
@@ -64,55 +65,102 @@
                        <li class= "grayscale"><img class="menu" id="boostrap" src="images/bootstrap.jpg"  alt="boostrap"></li>
                        <li class= "grayscale"><img class="menu" id="sass" src="images/sass-logo.png"  alt="sass"></li>
                        <li class= "grayscale"><img class="menu" id="jquery" src="images/jQurery-e1423237413165.png" alt="jquery"></li>
+                       <li class= "grayscale1"><img class="menu1" id="js" src="images/images.png" alt="js"></li>
+                       <li class= "grayscale1"><img class="menu1" id="react" src="images/react.png" alt="react"></li>
                    </ul>
 
                <button id="menu1">Back-End</button>
                    <ul class="menu1">
-                        <li class= "grayscale1"><img class="menu1" id="js" src="images/images.png" alt="js"></li>
                         <li class= "grayscale1"><img class="menu1" id="php" src="images/php_PNG50.png" alt="php"></li>
                         <li class= "grayscale1"><img class="menu1" id="mysql" src="images/mysql-logo.png" alt="mysql"></li>
-                        <li class= "grayscale1"><img class="menu1" id="react" src="images/react.png" alt="react"></li>
                    </ul>
 
     </div>
         </section>
         <section>
-            <p class="flechegauche">&#9756;</p>
+                <blockquote class="Projets">&#9756;"Projets"&#9758;</blockquote>
                  <div class="center">
-                     <div class="laptop">
-                       <h5>Click me</h5>
-                        </div>
+                     <!-- CARROUSSEL FLICKITY-->
+<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell"><img class="hop" id="myImg" src="images/1.png" alt="1" style="width:100%;max-width:300px"></div>
+        <div class="carousel-cell"><img class="hop" id="myImg1" src="images/2.png" alt="2" style="width:100%;max-width:300px"></div>
+        <div class="carousel-cell"><img class="hop" id="myImg2" src="images/3.png" alt="3" style="width:100%;max-width:300px"></div>
+        <div class="carousel-cell"><img class="hop" id="myImg3" src="images/4.png" alt="4" style="width:100%;max-width:300px"></div>
+        <div class="carousel-cell"><img class="hop" id="myImg4" src="images/5.png" alt="5" style="width:100%;max-width:300px"></div>
+        <div class="carousel-cell"><img class="hop" id="myImg5" src="images/6.png" alt="6" style="width:100%;max-width:300px"></div>
+        <div class="carousel-cell"><img class="hop" id="myImg6" src="images/7.png" alt="7" style="width:100%;max-width:300px"></div>
+        <div class="carousel-cell"><img class="hop" id="myImg7" src="images/8.png" alt="8" style="width:100%;max-width:300px"></div>
+        <div class="carousel-cell"><img class="hop" id="myImg8" src="images/9.png" alt="9" style="width:100%;max-width:300px"></div>
+        <div class="carousel-cell"><img class="hop" id="myImg9" src="images/10.png" alt="10" style="width:100%;max-width:300px"></div>
+</div>
                  </div>
-            <p class="flechedroite">&#9758;</p>
-        </section>
-
-
+            <div class="comp"><h5 class="competences">Competences</h5>
+                 <p>Créativité</p>
+                 <p>Patience</p>
+                 <p>Imagination</p>
+                 <p>Organisée</p></div>
+        </section>   
+            <div id="myModal" class="modal">
+                 <span class="close">&times;</span>
+                   <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+             </div>
 
         <section class="sticky">
-                <blockquote>"Contactez-moi"<span id="demo1"></span></blockquote>
-                <form class="formulaire" action="index.html" method="post">
-                    <div>
-                        <label for="nom">Nom :</label>
-                        <input type="text" id="nom" name="nom">
-                    </div>
-                    <div>
-                        <label for="email">E-mail :</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div>
-                        <label for="msg">Message :</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </div>
-                    <div class="button">
-                            <button type="submit">Envoyer le message</button>
+                <div class="card">
+                        <form class="formulaire" action="index.html" method="post">
+                        <div class="card__header">
+                          <a href="#"><span class="circle figure"></span></a>
+                          <button class="card__menu burger btn">
+                            <span class="line burger__line figure"></span>
+                            <span class="line burger__line burger__line_second figure"></span>
+                            <span class="line burger__line figure"></span>
+                          </button>
                         </div>
-                </form>
+                        <div class="card__main">
+                          <div class="card__message">
+                            <div class="card__message-box">Quel est votre nom </div>
+                            <span class="card__message-time line figure"></span>
+                          </div>
+                          <div class="card__message card__message_my">
+                            <div class="card__message-box card__message-box_my"> 
+                                <label for="nom">Nom :</label>
+                                <input type="text" id="nom" name="nom"></div>
+                            <span class="card__message-time line figure"></span>
+                          </div>
+                           <div class="card__message">
+                            <div class="card__message-box">Votre E-mail</div>
+                            <span class="card__message-time line figure"></span>
+                          </div>
+                          <div class="card__message card__message_my">
+                            <div class="card__message-box card__message-box_my">
+                                    <label for="nom">Email :</label>
+                                    <input type="text" id="email" name="email"></div>
+                            <span class="card__message-time line figure"></span>
+                          </div>
+                        </div>
+                        <div class="card__footer">
+                          <div class="loader">Envoie
+                        <span class="loader__element"></span>
+                        <span class="loader__element"></span>
+                        <span class="loader__element"></span>
+                      </div>
+                            <button class="btn form__send">me contacter<span class="line figure"></span></button>
+                          </form>
+                        </div>
+                      </div>
+           
                 <h3 class="linked">Linked</h3><a href="https://www.linkedin.com/feed/"><img id="link" src="images/linkedin-logo.jpg" alt="link"></a>
                 <h3 class="mail">Mail</h3><a href="mailto:elisa.vallee@epitech.eu"><img id="mailimage" src="images/aiga-mail1.png" alt="email"></a>
             </section>
 
     <footer>
+             <blockquote class="contact">&#9756;"Contactez-moi"&#9758;<span id="demo1"></span></blockquote>
+                
      </footer>
+     <script src="flickity/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script.js"></script>
 <script>
             $(document).ready(function(){
             $('#menu').click(function(){
@@ -124,6 +172,6 @@
                     $('.menu1').fadeToggle('500');
                 });
                 });
-        </script>
+</script>
 </body>
 </html>
